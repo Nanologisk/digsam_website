@@ -1,1 +1,32 @@
-site_name: My Docs
+site_name: "DigSam's ML Hub"  # Change the name as needed
+theme:
+  name: "material"  # Use the Material theme for better styling
+  palette:
+    scheme: slate  # Dark mode by default
+    primary: indigo
+    accent: pink
+  font:
+    text: Roboto
+    code: Fira Code
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.share
+
+nav:  # Define navigation structure
+  - Home: index.md
+  - Training:
+      - Schedule: training/schedule.md
+      - Tutorials: training/tutorials.md
+  - Events:
+      - Workshops: events/workshops.md
+  - Resources:
+      - Tools: resources/tools.md
+
+# Add plugins if needed
+plugins:
+  - search
+
