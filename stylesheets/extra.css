@@ -18,3 +18,20 @@
     width: 100%;
     border-collapse: collapse;
 }
+
+/* Ensure sidebar is always visible and collapsible */
+.md-sidebar--primary {
+    position: fixed;          /* Fix the sidebar in place */
+    top: 0;                  /* Align to the top */
+    left: 0;                 /* Align to the left */
+    height: 100%;            /* Full height */
+    z-index: 100;            /* Ensure it stays on top */
+    overflow-y: auto;        /* Allow scrolling if content overflows */
+    width: 260px;            /* Adjust width as needed */
+}
+
+/* Adjust the main content area to accommodate the fixed sidebar */
+.md-main__inner {
+    margin-left: 260px;      /* Ensure content does not hide behind sidebar */
+}
+
