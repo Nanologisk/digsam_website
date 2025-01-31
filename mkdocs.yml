@@ -15,6 +15,13 @@ theme:
     - toc.integrate
     - search.highlight
     - search.share
+  palette:
+    - scheme: slate # Dark mode (or use "default" for light mode)
+      primary: blue
+      accent: deep purple
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 nav:  # Define navigation structure
   - Home: index.md
@@ -23,10 +30,17 @@ nav:  # Define navigation structure
       - Tutorials: training/tutorials.md
   - Events:
       - Workshops: events/workshops.md
+      - Presentations: events/presentations.md
   - Resources:
       - Tools: resources/tools.md
+  - About: about.md
 
 # Add plugins if needed
 plugins:
   - search
+  - markdownextradata
+  - macros
 
+# Add extra css from stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
