@@ -29,12 +29,6 @@
     overflow-y: auto;       /* Allow scrolling if content overflows */
 }
 
-/* Optional: Adjust content area */
-.md-main__inner {
-    margin-left: 260px;     /* Ensure content does not hide behind sidebar */
-}
-
-
 /* Adjust the main content area to accommodate the fixed sidebar */
 .md-main__inner {
     margin-left: 260px;      /* Ensure content does not hide behind sidebar */
