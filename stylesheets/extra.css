@@ -23,3 +23,63 @@
 .md-main__inner {
     margin-left: 260px;      /* Ensure content does not hide behind sidebar */
 }
+
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .md-sidebar--primary {
+        position: relative;   /* Change to relative on mobile */
+        height: auto;         /* Reset height */
+        width: 100%;          /* Full width on mobile */
+        box-shadow: none;     /* Remove shadow on mobile */
+        display: none;        /* Hide sidebar by default */
+    }
+
+    /* Show sidebar on smaller screens when toggled */
+    .md-sidebar--primary.open {
+        display: block;       /* Show the sidebar when toggled */
+    }
+
+    /* Adjust the main content area */
+    .md-main__inner {
+        margin-left: 0;      /* No left margin on mobile */
+        padding: 15px;       /* Add padding for content */
+    }
+
+    /* Optional: Style the menu toggle button */
+    .md-icon-button {
+        display: block;       /* Ensure toggle button is visible */
+        position: absolute;   /* Position it correctly */
+        top: 15px;            /* Adjust top position */
+        left: 15px;           /* Adjust left position */
+        z-index: 101;         /* Ensure it stays on top */
+    }
+}
+
+/* Additional general styles for links and headings */
+.md-sidebar--primary h1, .md-sidebar--primary h2 {
+    margin: 0;  /* Remove default margin */
+    padding: 10px 15px;  /* Add padding for better spacing */
+    color: #343a40; /* Darker color for headings */
+}
+
+/* Style links in the sidebar */
+.md-sidebar--primary a {
+    display: block;  /* Make links block elements */
+    padding: 10px 15px;  /* Add padding for better spacing */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.md-sidebar--primary a:hover {
+    background-color: #e9ecef; /* Change background on hover */
+    color: #0056b3; /* Darker link color on hover */
+}
+
+/* Adjust the main content area */
+.md-content {
+    padding: 20px;  /* Add padding to main content */
+}
