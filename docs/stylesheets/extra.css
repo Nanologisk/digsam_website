@@ -1,0 +1,20 @@
+/* Adjust content width */
+.md-main__inner {
+    max-width: 900px;  /* Adjust width */
+}
+
+/* Modify header style */
+.md-header {
+    background-color: #002b36;  /* Change to match the original site */
+}
+
+/* Change link colors */
+.md-typeset a {
+    color: #007bff; /* Match link colors */
+}
+
+/* Adjust table styling */
+.md-typeset table {
+    width: 100%;
+    border-collapse: collapse;
+}
