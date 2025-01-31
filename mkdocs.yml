@@ -9,12 +9,13 @@ theme:
     text: Roboto
     code: Fira Code
   features:
-    - navigation.instant
-    - navigation.tabs
-    - navigation.top
-    - toc.integrate
-    - search.highlight
-    - search.share
+    - navigation.instant   # Instant navigation
+    - navigation.tabs      # Tabbed navigation for better organisation
+    - navigation.top       # Include a atop navigation bar
+    - navigation.expand    # Expand all sections by default
+    - toc.integrate        # Integrate table of contents into the side bar
+    - search.highlight     # Highlight search terms
+    - search.share         # Enable sharing search results
   palette:
     - scheme: slate # Dark mode (or use "default" for light mode)
       primary: blue
