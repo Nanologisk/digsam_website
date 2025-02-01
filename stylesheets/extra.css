@@ -19,26 +19,36 @@
     border-collapse: collapse;
 }
 
-/* Adjust the main content area to accommodate the fixed sidebar */
-.md-main__inner {
-    margin-left: 260px;      /* Ensure content does not hide behind sidebar */
+/* Ensure sidebar is always visible on larger screens */
+.md-sidebar--primary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height : 100%;
+    width: 260px; /*Sidebar width*/
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 100;
+    overflow-y: auto;
 }
 
-
-
-
+/* Adjust the main content area for large screens */
+.md-main {
+    margin-left: 260px; /* Push content to the right to make space for sidebar */
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
     .md-sidebar--primary {
-        position: relative;   /* Change to relative on mobile */
+        position: absolute;   /* Change to absolute on mobile */
         height: auto;         /* Reset height */
         width: 100%;          /* Full width on mobile */
         box-shadow: none;     /* Remove shadow on mobile */
         display: none;        /* Hide sidebar by default */
     }
 
-    /* Show sidebar on smaller screens when toggled */
+ 
+   /* Show sidebar on smaller screens when toggled */
     .md-sidebar--primary.open {
         display: block;       /* Show the sidebar when toggled */
     }
@@ -46,7 +56,6 @@
     /* Adjust the main content area */
     .md-main__inner {
         margin-left: 0;      /* No left margin on mobile */
-        padding: 15px;       /* Add padding for content */
     }
 
     /* Optional: Style the menu toggle button */
